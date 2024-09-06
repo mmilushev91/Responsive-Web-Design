@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(230, 227, 227);
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  border-bottom: 5px solid yellow;
+  background-color: rgba(35, 18, 57, 0.834);
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+    <title>Survey Form Questions</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form Questions</h1>
+    <p id="description">Thank you for participating in our survey</p>
+
+    <form id="survey-form" action="#" method="POST">
+      
+      <fieldset>
+        <legend>Client information</legend>
+        <label id="name-label">Full Name: 
+          <input id="name" type="text" placeholder="Enter Name" required>
+        </label>
+        <label id="email-label">Email: 
+          <input id="email" type="email" placeholder="Enter Email" required>
+        </label>
+        <label id="number-label">Age: 
+          <input id="number" type="number" min="18" max="120" placeholder="Enter age" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Gender:</legend>
+        <label>
+          <input type="radio" name="gender" value="radio" checked> 
+        Female</label>
+        <label>
+          <input type="radio" name="gender" value="radio"> 
+        Male</label>
+      </fieldset>
+      <fieldset>
+        <legend>Which our services your are interested in? </legend>
+        <select id="dropdown">
+          <option>Pick Service</option>
+          <option>Identity Design</option>
+          <option>Website Development</option>
+          <option>Digital Marketing</option>
+          <option>Social Media Marketing</option>
+          <option>Logo Design</option>
+          <option>Design Guidelines</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>What are the goals you like us to help?</legend>
+        <textarea rows="8" cols="60" placeholder="How we can help you...">
+        </textarea>
+      </fieldset>
+      <fieldset>
+        <legend>How did you heard about us?</legend>
+        <label>Google Search <input type="checkbox" value="google"> </label>
+        <label>Social Media <input type="checkbox" value="social"> </label>
+        <label>Email <input type="checkbox" value="email"> </label>
+        <label>Ads <input type="checkbox" value="ads"> </label>
+        <label>Other <input type="checkbox" value="other"> </label>
+      </fieldset>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+
+</html>
